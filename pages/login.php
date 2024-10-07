@@ -2,13 +2,13 @@
 session_start();
 require_once '../includes/pdo_connect.php';
 
-$error = ''; // Khởi tạo biến lỗi
+$error = ''; 
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Lấy thông tin người dùng từ cơ sở dữ liệu
+   
     $stmt = $pdo->prepare("SELECT * FROM tbl_user WHERE username = :username");
     $stmt->bindParam(':username', $username);
     $stmt->execute();
