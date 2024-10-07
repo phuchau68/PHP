@@ -1,10 +1,10 @@
 <?php
-session_start(); // Khởi động phiên
+session_start();
 
-require_once 'includes/pdo_connect.php'; // Kết nối tới cơ sở dữ liệu
-require_once 'includes/header.php'; // Bao gồm header
+require_once 'includes/pdo_connect.php';
+require_once 'includes/header.php';
 
 
-include 'views/content.php'; // Bao gồm nội dung chính của trang
-require_once 'includes/footer.php'; // Bao gồm footer
+include 'views/content.php'; 
+require_once 'includes/footer.php';
 ?>

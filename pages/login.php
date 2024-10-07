@@ -13,15 +13,14 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $stmt->bindParam(':username', $username);
     $stmt->execute();
 
-    $user = $stmt->fetch(); // Truy vấn người dùng
+    $user = $stmt->fetch();
 
-    // Kiểm tra xem người dùng có tồn tại và mật khẩu có đúng không
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['username'] = $username;
-        header('Location: ../index.php'); // Điều hướng đến trang chủ
+        header('Location: ../index.php'); 
         exit();
     } else {
-        $error = 'Invalid username or password'; // Thông báo lỗi nếu không đúng
+        $error = 'Invalid username or password';
     }
 }
 ?>
@@ -31,11 +30,11 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 
 <head>
     <title>Login</title>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 </head>
