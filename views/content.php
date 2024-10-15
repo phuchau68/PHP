@@ -17,7 +17,7 @@
         </p>
        </div>
        <a class="text-purple-600 mt-6 inline-block" href="#">
-        Read
+        Reads
        </a>
       </div>
      </div>
