@@ -9,19 +9,19 @@
       Hands-on Workshop
      </p>
      <div class="mt-4 flex space-x-4">
-      <a class="text-gray-400 hover:text-white" href="#">
+      <a class="text-gray-400 hover:text-purple-600" href="#">
        <i class="fab fa-medium">
        </i>
       </a>
-      <a class="text-gray-400 hover:text-white" href="#">
+      <a class="text-gray-400 hover:text-purple-600" href="#">
        <i class="fab fa-instagram">
        </i>
       </a>
-      <a class="text-gray-400 hover:text-white" href="#">
+      <a class="text-gray-400 hover:text-purple-600" href="#">
        <i class="fab fa-twitter">
        </i>
       </a>
-      <a class="text-gray-400 hover:text-white" href="#">
+      <a class="text-gray-400 hover:text-purple-600" href="#">
        <i class="fab fa-linkedin">
        </i>
       </a>
@@ -33,27 +33,27 @@
      </h3>
      <ul class="mt-4 space-y-2">
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         News
        </a>
       </li>
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         Game
        </a>
       </li>
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         Dev
        </a>
       </li>
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         React JS
        </a>
       </li>
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         More Category
        </a>
       </li>
@@ -65,17 +65,17 @@
      </h3>
      <ul class="mt-4 space-y-2">
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         About Me
        </a>
       </li>
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         Projects
        </a>
       </li>
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         Achievement
        </a>
       </li>
@@ -87,12 +87,12 @@
      </h3>
      <ul class="mt-4 space-y-2">
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         +012345678
        </a>
       </li>
       <li>
-       <a class="hover:text-white" href="#">
+       <a class="hover:text-purple-600" href="#">
         demo@gmail.com
        </a>
       </li>

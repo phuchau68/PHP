@@ -19,7 +19,7 @@
  
 <body>
 <header class="bg-white shadow">
-  <div class="container mx-auto px-4 py-4 bg-green-100 flex justify-between items-center">
+  <div class="container mx-auto px-4 py-4 bg-gray-200 flex justify-between items-center">
     <div class="flex items-center">
       <img alt="Logo" class="h-10" height="50" src="./public/images/Logo FPT.png" width="150" />
     </div>
