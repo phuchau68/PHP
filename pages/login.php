@@ -1,31 +1,34 @@
 <?php
 session_start();
 require_once '../includes/pdo_connect.php';
-
-$error = ''; 
-
+$error = '';
 if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-
-   
-    $stmt = $pdo->prepare("SELECT * FROM tbl_user WHERE username = :username");
+    $stmt = $pdo->prepare("SELECT * FROM admin WHERE username = :username");
     $stmt->bindParam(':username', $username);
     $stmt->execute();
-
-    $user = $stmt->fetch(); 
-
-    
+    $user = $stmt->fetch();
+    if (!$user) {
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+        $stmt->bindParam(':username', $username);
+        $stmt->execute();
+        $user = $stmt->fetch();
+    }
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['username'] = $username;
-        header('Location: ../index.php'); 
+        $_SESSION['user_id'] = $user['id'];
+        if (isset($user['username']) && $user['username'] === 'admin') {
+            header('Location: ../admin/index.php');
+        } else {
+            header('Location: ../index.php');
+        }
         exit();
     } else {
-        $error = 'Invalid username or password'; 
+        $error = 'Invalid username or password';
     }
 }
 ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -70,4 +73,5 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
+
 </html>

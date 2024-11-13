@@ -46,7 +46,7 @@
   <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
     <div class="md:w-1/2">
       <h1 class="text-4xl font-bold text-gray-800">
-        Hi, we are Team 2 <br> Workshop PHP
+        Hi, we are Team 2 <br> Workshop 
       </h1>
       <p class="mt-4 text-gray-600">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quia distinctio eaque amet nulla animi labore eum accusamus saepe. Velit odit molestias sapiente dolorem veniam nulla, ut asperiores aperiam accusantium.
